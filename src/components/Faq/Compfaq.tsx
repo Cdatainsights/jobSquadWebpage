@@ -4,28 +4,20 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const faqs = [
   {
-    question: 'Do I get a free trial?',
-    answer: 'No, we don\'t offer a free trial. If you wish to have a live demo of the product shoot us an email at info@jobsquad.com and we will be happy to assist you.',
+    question: "Do I get a free trial?",
+    answer: "1. Yes, there is a free tier that allows you to submit applications for jobs at no cost. However, there is a limit of one application per day.<br>2. You can only view one profile card for yourself.<br>3. You can only apply to the jobs listed on the first page of the LinkedIn job search."
   },
   {
     question: 'What is your refund policy?',
-    answer: 'Our refund policy is...',
-  },
-  {
-    question: 'Do I get free updates?',
-    answer: 'Yes, you get free updates...',
+    answer: 'If you decide to cancel your subscription, you can contact us by phone or email. We will process your cancellation and issue a full refund.',
   },
   {
     question: 'Do I get support and tutorials on how to start?',
-    answer: 'Yes, we provide support and tutorials...',
+    answer: 'Sure, our homepage has animated GIFs that provide a detailed explanation on how to use the application.',
   },
   {
     question: 'How will you bill me?',
-    answer: 'You will be billed via...',
-  },
-  {
-    question: 'Is there any limit on number of applications?',
-    answer: 'There is no limit on the number of applications...',
+    answer: 'We bill based on a subscription plan. You can cancel your subscription at any time and receive a full refund.',
   },
 ];
 
@@ -56,9 +48,10 @@ const Compfaq = () => {
                 transition={{ duration: 0.3 }}
                 className="overflow-hidden"
               >
-                <div className="p-4 rounded-b-lg bg-white text-black">
-                  {faq.answer}
-                </div>
+                <div
+                  className="p-4 rounded-b-lg bg-white text-black"
+                  dangerouslySetInnerHTML={{ __html: faq.answer }}
+                />
               </motion.div>
             )}
           </AnimatePresence>
