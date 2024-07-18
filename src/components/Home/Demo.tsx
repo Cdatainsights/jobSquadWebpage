@@ -8,7 +8,7 @@ import sapp from "../../../public/img/home/sapp.svg";
 import capp from "../../../public/img/home/capp.svg";
 import pin from "../../../public/img/home/pin.svg";
 import puzzle from "../../../public/img/home/puzzle.svg";
-import demovid from "../../../public/img/home/expvid/demovid.gif";
+
 
 import { Container } from "@/components/Container";
 import {
@@ -22,11 +22,18 @@ import { SectionTitle } from "../SectionTitle";
 export const Demo = () => {
   return (
     <Container className="flex flex-col items-center justify-center">
-      <SectionTitle 
-      title="Watch the 5-step guide to land you deam job"
+      <SectionTitle
+        title="Watch the 5-step guide to land you deam job"
       >
       </SectionTitle>
-      <Image src={demovid} alt="dmeovid"></Image>
+      <div className="flex justify-center">
+        <div className="overflow-hidden rounded-2xl lg:m-20 lg:pb-20 pt-10 pb-10">
+          <video width="1000" controls className="w-full h-auto">
+            <source src="../img/home/expvid/demo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
       <VerticalTimeline layout="1-column" animate={false} lineColor="">
         {/* Experience 1 */}
         <VerticalTimelineElement
@@ -216,7 +223,7 @@ export const Demo = () => {
               <h2 className="font-semibold lg:text-xl capitalize">Start Applying</h2>
               <p className="!mt-1 !font-normal text-gray-700 ">
                 <b>1.</b> On the Start Applying page click on <p className="ml-2 inline text-bold smd:hidden">SELECT </p>
-                <Image alt="link" src={select} width={40} height={20} className="ml-2 hidden md:inline" /> 
+                <Image alt="link" src={select} width={40} height={20} className="ml-2 hidden md:inline" />
                 button under your card to select it.
               </p>
               <p className="!mt-1 !font-normal text-gray-700 ">
