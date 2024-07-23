@@ -6,6 +6,8 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
+import { GoogleTagManager } from '@next/third-parties/google'
+
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -22,6 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <GoogleTagManager gtmId="G-2YVGYGG682" />
       <body className={inter.className}>
         <ThemeProvider attribute="class">
           <Navbar />
