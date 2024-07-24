@@ -6,9 +6,7 @@ import { Container } from "@/components/Container";
 import { contact } from "@/actions/contact"; // Adjust the import path as necessary
 import toast, { Toaster } from "react-hot-toast";
 
-import call from "../../../public/img/contact/call.svg";
 import mail from "../../../public/img/contact/mail.svg";
-import lin from "../../../public/img/contact/lin.svg";
 import x from "../../../public/img/contact/x.svg";
 import ins from "../../../public/img/contact/ins.svg";
 
