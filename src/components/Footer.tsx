@@ -22,7 +22,7 @@ export const Footer = () => {
             <div className="grid md:grid-cols-12 gap-8 lg:gap-20 mb-8 md:mb-12">
 
               {/* 1st block */}
-              <div className="md:col-span-4 lg:col-span-5">
+              <div className="md:col-span-4 lg:justify-start lg:col-span-5">
                 <div className="mb-2 ">
                   {/* Logo */}
                   <Link href="/" className=" flex flex-row lg:flex-col inline-block  lg:item-left justify-center lg;justify-left item-center" aria-label="jobsquad">

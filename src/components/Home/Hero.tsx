@@ -7,13 +7,13 @@ export const Hero = () => {
     <>
       <Container  className="flex flex-wrap ">
         <div id="about" className="flex items-center w-full lg:w-1/2">
-          <div className="max-w-2xl mb-8 pr-0 sm:pr-10">
+          <div className="max-w-2xl mb-8 pr-0 p-10 sm:pr-10">
             <h1 className="text-4xl font-bold leading-snug tracking-tight text-black lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight ">
               Find your dream
               job with just one
               click!
             </h1>
-            <p className="py-7 text-sm     leading-normal text-gray-500 lg:text-xl xl:text-2xl ">
+            <p className="py-7 text-sm     leading-normal text-gray-500 lg:text-lg">
               Effortlessly Apply for Your Dream Job on LinkedIn with JOBSquad.
               Automate Your Job Applications and Land Opportunities Faster.
               Take the next step in your career journey by installing JOBSquad today!
