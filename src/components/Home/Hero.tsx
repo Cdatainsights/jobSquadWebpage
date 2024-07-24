@@ -25,7 +25,7 @@ export const Hero = () => {
                 target="_blank"
                 rel="noopener"
                 className="block w-full md:w-auto px-4 md:px-8 py-3 md:py-4 text-base md:text-lg font-medium text-center text-white bg-[#3975EA] rounded-md mt-4 md:mt-0">
-                Get our extention
+                Get our extensions
               </a>
               <a
                 href="#"

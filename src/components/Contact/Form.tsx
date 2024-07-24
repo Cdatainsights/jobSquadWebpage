@@ -61,19 +61,14 @@ export const Form = () => {
       <Toaster />
       <div className="flex flex-col lg:flex-row items-center justify-between w-full max-w-6xl gap-5 mx-auto text-black px-7 py-7 lg:px-12 lg:py-12 formbg" style={{ borderRadius: '30px', boxShadow: 'none' }}>
         <div className="flex flex-col text-center w-[30%] justify-center items-center">
-          <Image src={call} alt="image" className="mx-auto" />
-          <p className="text-custom-blue pt-3">Call us at:</p>
-          <p>+1 (XXX) XXX-XXXX</p>
-          <br />
+          
           <Image src={mail} alt="image" className="mx-auto" />
           <p className="text-custom-blue pt-3">Email us:</p>
           <p>info@jobsquad.com</p>
           <br />
           <p className="text-custom-blue">Social Media</p>
           <div className="flex flex-row justify-center pt-3 gap-2">
-            <Link href="https://www.linkedin.com" target="_blank">
-              <Image src={lin} alt="image" className="mx-auto" />
-            </Link>
+            
             <Link href="https://www.x.com" target="_blank">
               <Image src={x} alt="image" className="mx-auto" />
             </Link>
