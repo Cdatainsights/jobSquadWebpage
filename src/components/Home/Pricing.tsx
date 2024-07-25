@@ -6,26 +6,38 @@ import gtik from "/public/img/home/gtik.svg";
 
 const pricingData = [
     {
-        title: "Free Plan",
+        title: "Free",
         price: "0/mo",
         features: [
-            "Free member can only apply once in a day",
-            "Free member can have only one Job Profile",
-            "Free member can only apply for the first job page on linkedin",
+            "Apply once per day",
+            "One Job Profile",
+            "Access first job page"
         ],
         icon: btik,
     },
     {
-        title: "Premium",
-        price: "199/mo",
+        title: "Monthly",
+        price: "10/mo",
         features: [
-            "Premium members have no limits on number of applications per day",
-            "Premium members have no limits on Job Profiles",
-            "Free user can only apply for the first job page on linkedin",
+            "Unlimited applications",
+            "Unlimited Job Profiles",
+            "Access all LinkedIn job pages"
+        ],
+        // recommended: true,
+        icon: gtik,
+    },
+    {
+        title: "Yearly",
+        price: "99/yr",
+        features: [
+            "Unlimited applications",
+            "Unlimited Job Profiles",
+            "Access all LinkedIn job pages"
         ],
         recommended: true,
         icon: gtik,
-    },
+    }
+
 ];
 
 const PricingTable = () => {
@@ -34,7 +46,7 @@ const PricingTable = () => {
             <p id="pricing" className="text-3xl md:text-3xl lg:text-4xl lg:mr-10 font-bold text-center mt-10 mb-10">
                 Pricing
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 px-9 pt-10 pb-10 lg:px-0">
+            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 lg:px-9 pt-10 pb-10 lg:px-0">
                 {pricingData.map((plan, index) => (
                     <div key={index} className="pricegrid">
                         {plan.recommended && (
@@ -51,7 +63,7 @@ const PricingTable = () => {
                             <div className="price text-2xl lg:text-3xl mx-auto flex items-center justify-center text-[#3975EA] font-bold border-[#3975EA] mb-6">
                                 <h1>${plan.price}</h1>
                             </div>
-                            <ul className="text-start pr-10 pl-10 lg:pl-20 text-[#3975EA]">
+                            <ul className="lg:text-start  pr-10 pl-10 lg:pl-20 text-[#3975EA]">
                                 {plan.features.map((feature, idx) => (
                                     <li key={idx} className="py-2 flex items-center">
                                         <Image src={plan.icon} alt="icon" width={20} height={20} className="mr-2" />

@@ -2,6 +2,7 @@
 import { Container } from "@/components/Container";
 import { Hero } from "@/components/Home/Hero";
 import { SectionTitle } from "@/components/SectionTitle";
+import Code from "@/components/Home/Code";
 
 
 import Testimonials from "@/components/Home/Testimonials";
@@ -35,6 +36,7 @@ export default function Home() {
       <Demo />
       <Middlesection />
       <Pricingtable />
+      <Code/>
       <SectionTitle
         title="Don’t just take our word for it!"
       > 
