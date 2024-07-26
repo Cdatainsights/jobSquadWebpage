@@ -7,7 +7,7 @@ export const Hero = () => {
     <>
       <Container  className="flex flex-wrap ">
         <div id="about" className="flex items-center w-full lg:w-1/2">
-          <div className="max-w-2xl mb-8 pr-0 p-10 sm:pr-10">
+          <div className="max-w-2xl mb-8 pr-0 lg:p-10 sm:pr-10">
             <h1 className="text-4xl font-bold leading-snug tracking-tight text-black lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight ">
               Find your dream
               job with just one
