@@ -20,8 +20,9 @@ export default function Home() {
     <Container>
       <Head>
                 <link rel="icon" href="/icon.ico" />
+                <GoogleTagManager gtmId="G-2YVGYGG682" />
       </Head>
-      <GoogleTagManager gtmId="G-2YVGYGG682" />
+      
       <Hero />
       <div className="border border-gray-300 border-opacity-50 w-4/5 mx-auto"></div>
       <SectionTitle

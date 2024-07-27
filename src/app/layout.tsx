@@ -24,7 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <GoogleTagManager gtmId="G-2YVGYGG682" />
+      <head>
+        <GoogleTagManager gtmId="G-2YVGYGG682" />
+      </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class">
           <Navbar />
