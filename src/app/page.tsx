@@ -2,7 +2,7 @@
 import { Container } from "@/components/Container";
 import { Hero } from "@/components/Home/Hero";
 import { SectionTitle } from "@/components/SectionTitle";
-import Code from "@/components/Home/Code";
+// import Code from "@/components/Home/Code";
 
 
 import Testimonials from "@/components/Home/Testimonials";
@@ -40,7 +40,7 @@ export default function Home() {
       <Middlesection />
    
       <PriceTable/>
-      <Code/>
+      {/* <Code/> */}
       <SectionTitle
         title="Don’t just take our word for it!"
       > 
