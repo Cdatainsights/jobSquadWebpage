@@ -18,7 +18,7 @@ const Testimonials = () => {
             <Image src={userOneImg} alt="UserOne" className="rounded-full" width={80} height={80} />
           </div>
           <div className="p-6 text-gray-600 pb-10 relative z-10 text-center">
-            <p className="text-lg mb-4">&quot; Since using this tool, I&apos;ve seen a significant increase in the number of interviews I&apos;m getting. It helps me cast a wider net and ensures I don&apos;t miss out on any good opportunities &quot;</p>
+            <p className="text-lg mb-4">&quot;Thanks to this tool, I&apos;ve landed multiple interviews within just a few weeks. It&apos;s easy to use and has significantly improved my chances of finding the right job.&quot;</p>
             <div className="border-b-2 border-gray-300 w-4/5 mb-2 mx-auto"></div>
             <p className="font-semibold text-gray-500">Emily Parker</p>
           </div>
@@ -30,7 +30,7 @@ const Testimonials = () => {
             <Image src={userTwoImg} alt="UserTwo" className="rounded-full" width={80} height={80} />
           </div>
           <div className="p-6 text-gray-600 pb-10 relative z-10 text-center">
-            <p className="text-lg mb-4">&quot; This tool has been a game-changer in my job search. It&apos;s helped me save time, apply to more jobs, and ultimately land more interviews. I highly recommend it to anyone looking for a new position &quot;</p>
+            <p className="text-lg mb-4">&quot;Using this tool has transformed my job search. I&apos;ve gone from sending out a few applications a week to dozens. The automated process is seamless and incredibly efficient.&quot;</p>
             <div className="border-b-2 border-gray-300 w-4/5 mb-2 mx-auto"></div>
             <p className="font-semibold text-gray-500">Marcus Johnson</p>
           </div>
@@ -42,7 +42,7 @@ const Testimonials = () => {
             <Image src={userThreeImg} alt="UserThree" className="rounded-full" width={80} height={80} />
           </div>
           <div className="p-6 text-gray-600 pb-10 relative z-10 text-center">
-            <p className="text-lg mb-4">&quot; This tool is a lifesaver! It frees up so much time in my job search by automatically applying to jobs on LinkedIn. I can now focus on tailoring my cover letters and preparing for interviews &quot;</p>
+            <p className="text-lg mb-4">&quot;This job auto-applier has made my job hunt so much easier. It applies to relevant jobs quickly and efficiently, giving me more time to prepare for the interviews.&quot;</p>
             <div className="border-b-2 border-gray-300 w-4/5 mb-2 mx-auto"></div>
             <p className="font-semibold text-gray-500">Daniel Miller</p>
           </div>

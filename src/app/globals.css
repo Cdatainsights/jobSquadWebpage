@@ -164,13 +164,15 @@
 
 .pricegrid {
   background-color: transparent;
+  display: flex;
   overflow: hidden;
   border-width: 2px;
   border-style: solid;
   border-color: #3975EA;
   border-radius: 50px;        /* Sets border radius to 1px */
-  width: 100%;
+  width: 70%;
   align-items: center;
+  justify-content: center;
 
 }
 

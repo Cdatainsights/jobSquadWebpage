@@ -9,9 +9,9 @@ import Testimonials from "@/components/Home/Testimonials";
 import { Middlesection } from "@/components/Home/Middlesection";
 import { Cta } from "@/components/Home/Cta";
 import { Demo }   from '@/components/Home/Demo';
-import Pricingtable from "@/components/Home/Pricing";
 import Head from 'next/head';
 import { GoogleTagManager } from '@next/third-parties/google'
+import PriceTable from "@/components/Home/PricingTable";
 
 
 
@@ -38,7 +38,8 @@ export default function Home() {
 
       <Demo />
       <Middlesection />
-      <Pricingtable />
+   
+      <PriceTable/>
       <Code/>
       <SectionTitle
         title="Don’t just take our word for it!"

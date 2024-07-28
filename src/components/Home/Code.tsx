@@ -12,7 +12,7 @@ const Code = () => {
 
     return (
         <div className='flex justify-center    '>
-            <div className="cta-container w-full lg:w-[80%] mt-8 p-4 bg-gradient-to-r from-[#e8f6ff] to-white shadow-custom rounded-xl text-center">
+            <div className="cta-container w-full lg:w-[60%] mt-8 p-4 bg-gradient-to-r from-[#e8f6ff] to-white shadow-custom rounded-xl text-center">
                 <h3 className="text-2xl font-bold mb-2">Exclusive Offer!</h3>
                 <p className="mb-4">Use the coupon code below for a special discount:</p>
                 <div className="flex justify-center items-center">
