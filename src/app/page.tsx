@@ -4,13 +4,12 @@ import { Hero } from "@/components/Home/Hero";
 import { SectionTitle } from "@/components/SectionTitle";
 // import Code from "@/components/Home/Code";
 
-
 import Testimonials from "@/components/Home/Testimonials";
 import { Middlesection } from "@/components/Home/Middlesection";
 import { Cta } from "@/components/Home/Cta";
 import { Demo }   from '@/components/Home/Demo';
-import Head from 'next/head';
-import { GoogleTagManager } from '@next/third-parties/google'
+// import Head from 'next/head';
+// import { GoogleTagManager } from '@next/third-parties/google'
 import PriceTable from "@/components/Home/PricingTable";
 
 
@@ -18,10 +17,7 @@ import PriceTable from "@/components/Home/PricingTable";
 export default function Home() {
   return (
     <Container>
-      <Head>
-                <link rel="icon" href="/icon.ico" />
-                <GoogleTagManager gtmId="G-2YVGYGG682" />
-      </Head>
+      
       
       <Hero />
       <div className="border border-gray-300 border-opacity-50 w-4/5 mx-auto"></div>
