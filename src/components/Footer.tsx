@@ -91,7 +91,7 @@ export const Footer = () => {
               {/* Social links */}
               <ul className="flex mb-4 justify-center md:order-1 md:ml-4 md:mb-0">
                 <li>
-                  <Link href="https://www.x.com" target="_blank" className="flex justify-center items-center text-purple-600 bg-custom-blue hover:text-gray-100 hover:bg-custom-blue2 rounded-full transition duration-150 ease-in-out" aria-label="Twitter">
+                  <Link href="https://www.x.com/Jobsquad374380" target="_blank" className="flex justify-center items-center text-purple-600 bg-custom-blue hover:text-gray-100 hover:bg-custom-blue2 rounded-full transition duration-150 ease-in-out" aria-label="Twitter">
                     <svg className="w-8 h-8 fill-white" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                       <path d="m13.063 9 3.495 4.475L20.601 9h2.454l-5.359 5.931L24 23h-4.938l-3.866-4.893L10.771 23H8.316l5.735-6.342L8 9h5.063Zm-.74 1.347h-1.457l8.875 11.232h1.36l-8.778-11.232Z" />
                     </svg>
@@ -100,7 +100,7 @@ export const Footer = () => {
                 
                 
                 <li className="ml-4">
-                  <Link href="https://www.instgram.com" target="_blank" className="flex justify-center items-center text-purple-600 bg-custom-blue hover:text-gray-100 hover:bg-custom-blue2 rounded-full transition duration-150 ease-in-out" aria-label="Instagram">
+                  <Link href="https://www.instagram.com/jobs.quad/" target="_blank" className="flex justify-center items-center text-purple-600 bg-custom-blue hover:text-gray-100 hover:bg-custom-blue2 rounded-full transition duration-150 ease-in-out" aria-label="Instagram">
                     <svg className="w-8 h-8 fill-white" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="20.145" cy="11.892" r="1" />
                       <path d="M16 20c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" />

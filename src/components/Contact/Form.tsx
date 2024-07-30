@@ -67,10 +67,10 @@ export const Form = () => {
           <p className="text-custom-blue">Social Media</p>
           <div className="flex flex-row justify-center pt-3 gap-2">
             
-            <Link href="https://www.x.com" target="_blank">
+            <Link href="https://www.x.com/Jobsquad374380" target="_blank">
               <Image src={x} alt="image" className="mx-auto" />
             </Link>
-            <Link href="https://www.instgram.com" target="_blank">
+            <Link href="https://www.instagram.com/jobs.quad/" target="_blank">
               <Image src={ins} alt="image" className="mx-auto" />
             </Link>
           </div>
