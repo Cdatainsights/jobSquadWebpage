@@ -23,7 +23,7 @@ export const Demo = () => {
   return (
     <Container className="flex flex-col items-center justify-center">
       <SectionTitle
-        title="Watch the 5-step guide to land you deam job"
+        title="Watch the 5-step guide to land your dream job"
       >
       </SectionTitle>
       <div className="flex justify-center">
