@@ -1,4 +1,4 @@
-"use client"; // Add this at the top
+"use client";
 
 import { useState, useEffect } from "react";
 import { Container } from "@/components/Container";
@@ -10,12 +10,14 @@ import { Cta } from "@/components/Home/Cta";
 import { Demo } from "@/components/Home/Demo";
 import PriceTable from "@/components/Home/PricingTable";
 import { DiscountPopup } from "@/components/Home/DiscountPopup";
+import Confetti from "react-confetti";
 
 export default function Home() {
   const [showPopup, setShowPopup] = useState(false);
+  const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
 
   useEffect(() => {
-    // Show the popup after 5 seconds
+    // Show the popup after 1.5 seconds
     const timer = setTimeout(() => {
       setShowPopup(true);
     }, 1500);
@@ -24,9 +26,31 @@ export default function Home() {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    // Update window size on mount and on resize
+    const updateWindowSize = () => {
+      setWindowSize({ width: window.innerWidth, height: window.innerHeight });
+    };
+
+    updateWindowSize(); // Initial size
+    window.addEventListener("resize", updateWindowSize);
+
+    // Cleanup the event listener on unmount
+    return () => window.removeEventListener("resize", updateWindowSize);
+  }, []);
+
   return (
     <Container>
-      {showPopup && <DiscountPopup onClose={() => setShowPopup(false)} />}
+      {showPopup && (
+        <>
+          <Confetti
+            width={windowSize.width}
+            height={windowSize.height}
+            recycle={true}
+          />
+          <DiscountPopup onClose={() => setShowPopup(false)} />
+        </>
+      )}
       <Hero />
       <div className="border border-gray-300 border-opacity-50 w-4/5 mx-auto"></div>
       <SectionTitle title="Automate your job application process">
