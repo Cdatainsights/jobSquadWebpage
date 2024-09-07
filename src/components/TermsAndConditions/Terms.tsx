@@ -13,15 +13,15 @@ export const Terms = () => {
       <section className={styles.section}>
         <p className={styles.paragraph}>Welcome to Job Squad!</p>
         <p className={styles.paragraph}>
-          These terms and conditions outline the rules and regulations for the use of Job Squad's website,
-          located at https://www.jobsquad.info/.
+          These terms and conditions outline the rules and regulations for the use of Job Squad&apos;s website,
+          located at https://www.jobsquad.info.
         </p>
       </section>
 
       <section className={styles.section}>
         <h2 className={styles.subheading}>Acceptance of Terms</h2>
         <p className={styles.paragraph}>
-          By accessing this website, we assume you accept these terms and conditions. Do not continue to use Job Squad's website
+          By accessing this website, we assume you accept these terms and conditions. Do not continue to use Job Squad&apos;s website
           if you do not agree to take all of the terms and conditions stated on this page.
         </p>
       </section>
@@ -29,8 +29,8 @@ export const Terms = () => {
       <section className={styles.section}>
         <h2 className={styles.subheading}>Cookies</h2>
         <p className={styles.paragraph}>
-          We employ the use of cookies. By accessing Job Squad's website, you agree to use cookies in accordance with 
-          Job Squad’s Privacy Policy.
+          We employ the use of cookies. By accessing Job Squad&apos;s website, you agree to use cookies in accordance with 
+          Job Squad&apos;s Privacy Policy.
         </p>
       </section>
 
@@ -38,7 +38,7 @@ export const Terms = () => {
         <h2 className={styles.subheading}>License</h2>
         <p className={styles.paragraph}>
           Unless otherwise stated, Job Squad and/or its licensors own the intellectual property rights for all material on 
-          Job Squad's website. All intellectual property rights are reserved. You may access this from Job Squad for your 
+          Job Squad&apos;s website. All intellectual property rights are reserved. You may access this from Job Squad for your 
           own personal use, subject to restrictions set in these terms and conditions.
         </p>
       </section>
@@ -75,3 +75,4 @@ export const Terms = () => {
     </main>
   );
 };
+
