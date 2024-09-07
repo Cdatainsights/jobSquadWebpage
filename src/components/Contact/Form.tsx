@@ -159,11 +159,11 @@ export const Form = () => {
     event.preventDefault();
     setSubmitting(true);
 
-    const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID!;
-    const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID!;
-    const userId = process.env.NEXT_PUBLIC_USER_ID!;
+    const serviceId = process.env.VITE_EMAILJS_SERVICE_ID!;
+    const templateId = process.env.VITE_EMAILJS_TEMPLATE_ID!;
+    const userId = process.env.VITE_EMAILJS_USER_ID!;
     const confirmationTemplateId =
-      process.env.NEXT_PUBLIC_CONFIRMATION_TEMPLATE_ID!;
+      process.env.VITE_EMAILJS_CONFIRMATION_TEMPLATE_ID!;
 
     try {
       // Prepare parameters for the email
