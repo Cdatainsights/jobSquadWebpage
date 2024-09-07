@@ -159,11 +159,10 @@ export const Form = () => {
     event.preventDefault();
     setSubmitting(true);
 
-    const serviceId = process.env.VITE_EMAILJS_SERVICE_ID!;
-    const templateId = process.env.VITE_EMAILJS_TEMPLATE_ID!;
-    const userId = process.env.VITE_EMAILJS_USER_ID!;
-    const confirmationTemplateId =
-      process.env.VITE_EMAILJS_CONFIRMATION_TEMPLATE_ID!;
+    const serviceId = "service_j8se2kf";
+    const templateId = "template_gpf3dbq";
+    const userId = "c25oqmvHyaoWjA_rj";
+    const confirmationTemplateId ="template_yh6tngu";
 
     try {
       // Prepare parameters for the email
