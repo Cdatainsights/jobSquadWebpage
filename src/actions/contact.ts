@@ -50,6 +50,16 @@ export async function contact(formData: FormData) {
     throw new Error('Missing required form data'); // Handle missing data as needed
   }
 
+  // Ensure environment variables are defined
+  const serviceId = process.env.VITE_EMAILJS_SERVICE_ID;
+  const templateId = process.env.VITE_EMAILJS_TEMPLATE_ID;
+  const userId = process.env.VITE_EMAILJS_USER_ID;
+  const confirmationTemplateId = process.env.VITE_EMAILJS_CONFIRMATION_TEMPLATE_ID;
+
+  if (!serviceId || !templateId || !userId || !confirmationTemplateId) {
+    throw new Error('Missing EmailJS configuration. Please check your environment variables.');
+  }
+
   const emailParams = {
     from_name: name,
     from_email: email,
@@ -59,25 +69,25 @@ export async function contact(formData: FormData) {
   try {
     // Send email to your own address
     await emailjs.send(
-      process.env.VITE_EMAILJS_SERVICE_ID,  // Your EmailJS service ID
-      process.env.VITE_EMAILJS_TEMPLATE_ID, // Your EmailJS template ID
+      serviceId,  // Your EmailJS service ID
+      templateId, // Your EmailJS template ID
       {
         ...emailParams,
         subject: 'New message from your website!',
         to_email: 'info@metaorigins.com',   // Replace with your own email address
       },
-      process.env.VITE_EMAILJS_USER_ID       // Your EmailJS user ID
+      userId       // Your EmailJS user ID
     );
 
     // Send confirmation email to the user
     await emailjs.send(
-      process.env.VITE_EMAILJS_SERVICE_ID,    // Same service ID
-      process.env.VITE_EMAILJS_CONFIRMATION_TEMPLATE_ID, // Confirmation template ID
+      serviceId,    // Same service ID
+      confirmationTemplateId, // Confirmation template ID
       {
         to_name: name,
         to_email: email,
       },
-      process.env.VITE_EMAILJS_USER_ID        // Same user ID
+      userId        // Same user ID
     );
 
     return { message: 'Message sent successfully!' };
