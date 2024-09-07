@@ -1,10 +1,9 @@
-
-import { Container } from '../../components/Container';
-import {Terms} from '../../components/TermsAndConditions/Terms';
+import { Container } from "../../components/Container";
+import { Terms } from "../../components/TermsAndConditions/Terms";
 
 const TermsExport = () => {
   return (
-    <div className='containbg'>
+    <div className="containbg">
       <Container>
         <Terms />
       </Container>
