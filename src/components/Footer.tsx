@@ -66,7 +66,7 @@ export const Footer = () => {
                   <br/>
                   <ul className="pl-5 lg:p-0">
                     <li className="mb-1">
-                      <Link href="../pdf/tnc.pdf" target="_blank" className="text-gray-600 hover:text-gray-400 transition duration-150 ease-in-out">Terms & Conditions</Link>
+                      <Link href="/terms" className="text-gray-600 hover:text-gray-400 transition duration-150 ease-in-out">Terms & Conditions</Link>
                     </li>
                     <li className="mb-1">
                       <Link href="../pdf/privacy.pdf" target="_blank" className="text-gray-600 hover:text-gray-400 transition duration-150 ease-in-out">Privacy Policy</Link>
