@@ -179,7 +179,7 @@ export const Form = () => {
         {
           ...emailParams,
           subject: "New message from your website!",
-          to_email: "info@jobsquad.com", // Replace with your email
+          to_email: "info@cdatainsights.com", // Replace with your email
         },
         userId
       );
@@ -219,7 +219,7 @@ export const Form = () => {
         <div className="flex flex-col text-center w-[30%] justify-center items-center">
           <Image src={mail} alt="image" className="mx-auto" />
           <p className="text-custom-blue pt-3">Email us:</p>
-          <p>info@jobsquad.com</p>
+          <p>info@cdatainsights.com</p>
           <br />
           <p className="text-custom-blue">Social Media</p>
           <div className="flex flex-row justify-center pt-3 gap-2">
