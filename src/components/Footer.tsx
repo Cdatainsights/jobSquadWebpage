@@ -99,7 +99,7 @@ export const Footer = () => {
                     </li>
                     <li className="mb-1">
                       <Link
-                        href="../pdf/privacy.pdf"
+                        href="/privacy"
                         target="_blank"
                         className="text-gray-600 hover:text-gray-400 transition duration-150 ease-in-out"
                       >
