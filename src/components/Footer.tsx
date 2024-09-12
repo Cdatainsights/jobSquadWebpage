@@ -100,7 +100,7 @@ export const Footer = () => {
                     <li className="mb-1">
                       <Link
                         href="/privacy"
-                        target="_blank"
+                        // target="_blank"
                         className="text-gray-600 hover:text-gray-400 transition duration-150 ease-in-out"
                       >
                         Privacy Policy
@@ -108,8 +108,8 @@ export const Footer = () => {
                     </li>
                     <li className="mb-1">
                       <Link
-                        href="../pdf/refunds.pdf"
-                        target="_blank"
+                        href="/refunds"
+                        // target="_blank"
                         className="text-gray-600 hover:text-gray-400 transition duration-150 ease-in-out"
                       >
                         Refunds{" "}
