@@ -12,7 +12,7 @@ export const Privacy = () => {
 
       <section className={styles.section}>
         <p className={styles.paragraph}>
-          Welcome to Job Squad's Privacy Policy!
+          Welcome to Job Squad&apos;s Privacy Policy!
         </p>
         <p className={styles.paragraph}>
           At Job Squad, accessible from https://www.jobsquad.info, the privacy
@@ -60,7 +60,7 @@ export const Privacy = () => {
       <section className={styles.section}>
         <h2 className={styles.subheading}>Third-Party Privacy Policies</h2>
         <p className={styles.paragraph}>
-          Job Squad's Privacy Policy does not apply to other websites. Thus, we
+          Job Squad&apos;s Privacy Policy does not apply to other websites. Thus, we
           advise you to consult the respective Privacy Policies of these
           third-party websites for more detailed information.
         </p>

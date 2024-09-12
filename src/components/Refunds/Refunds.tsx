@@ -13,7 +13,7 @@ export const Refunds = () => {
       <section className={styles.section}>
         <p className={styles.paragraph}>Thank you for shopping with Job Squad!</p>
         <p className={styles.paragraph}>
-          If you are not entirely satisfied with your purchase, we're here to help. This Refund Policy outlines our policies for returns and refunds.
+          If you are not entirely satisfied with your purchase, we&apos;re here to help. This Refund Policy outlines our policies for returns and refunds.
         </p>
       </section>
 
@@ -30,7 +30,7 @@ export const Refunds = () => {
           Once we receive your item, we will inspect it and notify you that we have received your returned item. We will immediately notify you of the status of your refund after inspecting the item.
         </p>
         <p className={styles.paragraph}>
-          If your return is approved, we will initiate a refund to your original method of payment. You will receive the credit within a certain number of days, depending on your card issuer's policies.
+          If your return is approved, we will initiate a refund to your original method of payment. You will receive the credit within a certain number of days, depending on your card issuer&apos;s policies.
         </p>
       </section>
 
@@ -54,5 +54,4 @@ export const Refunds = () => {
     </main>
   );
 };
-
 
