@@ -28,11 +28,11 @@ export const Hero = () => {
                 Get our extensions
               </a>
               <a
-                href="/about"
+                href="https://www.app.jobsquad.info"
                 target="_blank"
                 rel="noopener"
                 className="block w-full md:w-auto px-4 md:px-8 py-3 md:py-4 text-base md:text-lg font-medium text-center text-white bg-[#CCE1FF] rounded-md mt-4 md:mt-0">
-                <span className="text-[#3975EA]"> Learn more</span>
+                <span className="text-[#3975EA]">Explore Dashboard</span>
               </a>
             </div>
           </div>

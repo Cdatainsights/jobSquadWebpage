@@ -44,7 +44,7 @@ export const Refunds = () => {
       <section className={styles.section}>
         <h2 className={styles.subheading}>Contact Us</h2>
         <p className={styles.paragraph}>
-          If you have any questions on how to return your item to us, please contact us.
+          If you have any questions on how to return your item to us, please contact us at <u>info@cdatainsights.com</u>
         </p>
       </section>
 
