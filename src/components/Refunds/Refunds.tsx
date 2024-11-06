@@ -48,6 +48,7 @@ export const Refunds = () => {
         </p>
       </section>
 
+
       <footer className={styles.footer}>
         <p className={styles.footerText}>&copy; {new Date().getFullYear()} Job Squad. All rights reserved.</p>
       </footer>
