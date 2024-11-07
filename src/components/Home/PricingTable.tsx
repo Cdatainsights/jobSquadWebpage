@@ -118,7 +118,7 @@ export default function Page() {
   ]
 
   return (
-    <div className="py-8">
+    <div id="pricing" className="py-8">
       <PricingHeader title="Pricing Plans" subtitle="Choose the plan that's right for you" />
       <section className="flex flex-col sm:flex-row sm:flex-wrap justify-center gap-8 mt-8">
         {plans.map((plan) => {

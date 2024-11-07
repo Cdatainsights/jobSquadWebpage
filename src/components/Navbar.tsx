@@ -1,25 +1,39 @@
-'use client';
-import Link from 'next/link';
-import Image from 'next/image';
-import { Disclosure } from '@headlessui/react';
-import Head from 'next/head';
+"use client";
+import Link from "next/link";
+import Image from "next/image";
+import { Disclosure } from "@headlessui/react";
+import Head from "next/head";
 
 export const Navbar = () => {
   const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'About Us', href: '/about' },
-    { name: 'Pricing', href: '/#pricing' },
-    { name: 'Contact Us', href: '/contact' },
-    { name: 'FAQs', href: '/faq' },
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "/about" },
+    { name: "Pricing", href: "/#pricing" },
+    { name: "Contact Us", href: "/contact" },
+    { name: "FAQs", href: "/faq" },
   ];
+
+  // Custom scroll function for in-page links
+  const handleScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    if (href.startsWith("/#")) {
+      e.preventDefault();
+      const targetId = href.split("#")[1];
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  };
 
   return (
     <div className="w-full bg-transparent">
       <Head>
-                <link rel="icon" href="/icon.ico" />
+        <link rel="icon" href="/icon.ico" />
       </Head>
       <nav className="container relative flex flex-wrap bg-transparent items-center justify-between p-8 mx-auto lg:justify-between xl:px-0">
-        {/* Logo */}
         <Disclosure>
           {({ open, close }) => (
             <>
@@ -65,7 +79,10 @@ export const Navbar = () => {
                     <Link key={index} href={item.href} legacyBehavior>
                       <a
                         className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none"
-                        onClick={() => close()} // Close the menu after clicking a link
+                        onClick={(e) => {
+                          handleScroll(e, item.href);
+                          close();
+                        }}
                       >
                         {item.name}
                       </a>
@@ -77,7 +94,7 @@ export const Navbar = () => {
                   >
                     <a
                       className="w-full px-6 py-2 mt-3 text-center text-white bg-custom-blue rounded-md lg:ml-5"
-                      onClick={() => close()} // Close the menu after clicking a link
+                      onClick={() => close()}
                     >
                       Get Started
                     </a>
@@ -88,13 +105,15 @@ export const Navbar = () => {
           )}
         </Disclosure>
 
-        {/* Menu */}
         <div className="hidden text-center lg:flex lg:items-center">
           <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
             {navigation.map((menu, index) => (
               <li className="mr-3 nav__item" key={index}>
                 <Link href={menu.href} legacyBehavior>
-                  <a className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none">
+                  <a
+                    className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none"
+                    onClick={(e) => handleScroll(e, menu.href)}
+                  >
                     {menu.name}
                   </a>
                 </Link>
