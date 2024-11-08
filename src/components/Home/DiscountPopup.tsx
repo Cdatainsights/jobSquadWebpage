@@ -23,7 +23,7 @@ export const DiscountPopup: React.FC<DiscountPopupProps> = ({ onClose }) => {
         </h2>
         <p className="text-xl text-gray-700 mb-8">
           Use the code{" "}
-          <span className="font-bold text-red-600">LAUNCH2024</span> at checkout
+          <span className="font-bold text-red-600">AUTOAPPLY90</span> at checkout
           to get for <b>$0.99!</b>
         </p>
         <a
