@@ -20,7 +20,7 @@ const Testimonials = () => {
           <div className="p-6 text-gray-600 pb-10 relative z-10 text-center">
             <p className="text-lg mb-4">&quot;JobSquad is a lifesaver! It&quot;s like having a robot apply for jobs for me. More interviews, less time wasted.&quot;</p>
             <div className="border-b-2 border-gray-300 w-4/5 mb-2 mx-auto"></div>
-            <p className="font-semibold text-gray-500">Emily Parker</p>
+            <p className="font-semibold text-gray-500">Akshay Tyagi</p>
           </div>
         </div>
 
@@ -32,7 +32,7 @@ const Testimonials = () => {
           <div className="p-6 text-gray-600 pb-10 relative z-10 text-center">
             <p className="text-lg mb-4">&quot;I was drowning in job applications. JobSquad pulled me out. So much faster to find jobs I actually want.&quot;</p>
             <div className="border-b-2 border-gray-300 w-4/5 mb-2 mx-auto"></div>
-            <p className="font-semibold text-gray-500">Marcus Johnson</p>
+            <p className="font-semibold text-gray-500">Shriyam</p>
           </div>
         </div>
 
